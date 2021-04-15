@@ -18,6 +18,6 @@ jobs:
       - name: sck
         env: 
           token: ${{ secrets.TOKEN }}
-        run: echo "${{ env.token }}"
+        run: echo "$token hello"
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
